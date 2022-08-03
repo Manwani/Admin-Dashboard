@@ -179,4 +179,38 @@ ul{
 
 .content{
     border:2px solid red;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding:20px;
+    background-color: rgb(211, 206, 206);
+}
+
+.projects{
+    grid-column: 1/2;
+    border:2px solid purple;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:20px repeat(3, 1fr);
+    gap:10px;
+}
+
+.label-text{
+    grid-column: 1/3;
+    font-family: "Roboto";
+    font-size:20px;
+    font-weight:bold;
+}
+
+.announcements-trending{
+    grid-column: 2/3;
+    border:2px solid black;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr 20px 1fr;
+    gap:10px;
+    padding-left:10px;
+}
+
+.project-box{
+    border: 2px solid green;
 }
