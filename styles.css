@@ -258,6 +258,12 @@ ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
+    gap:10px;
 }
 
+
+
+.announcements>p{
+    font-size:13px;
+}
 
