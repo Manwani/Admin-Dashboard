@@ -84,12 +84,14 @@ ul{
 }
 
 .header{
-    border:2px solid blue;
+    /* border:2px solid blue; */
     display:grid;
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: 1fr 1fr;
     align-items: center;
     font-family: "Roboto";
+    z-index:1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .magnify-glass{
@@ -178,20 +180,20 @@ ul{
 }
 
 .content{
-    border:2px solid red;
+    /* border:2px solid red; */
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding:20px;
     background-color: rgb(211, 206, 206);
 }
 
 .projects{
     grid-column: 1/2;
-    border:2px solid purple;
+    /* border:2px solid purple; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:min-content repeat(3, 1fr);
-    gap:10px;
+    gap:20px;
+    padding:20px;
 }
 
 .label-text{
@@ -203,12 +205,12 @@ ul{
 
 .announcements-trending{
     grid-column: 2/3;
-    border:2px solid black;
+    /* border:2px solid black; */
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr min-content 1fr;
-    gap:10px;
-    padding-left:10px;
+    gap:20px;
+    padding:20px;
 }
 
 .project-box{
@@ -218,6 +220,7 @@ ul{
     border-left-color: rgb(230, 161, 34);
     padding:20px;
     position:relative;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
   
 }
@@ -231,7 +234,7 @@ ul{
 
 .box-paragraph{
     display: -webkit-box;
-   -webkit-line-clamp: 5;
+   -webkit-line-clamp: 4;
    -webkit-box-orient: vertical;  
     overflow: hidden;
     font-size:16px;
@@ -249,6 +252,12 @@ ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
+}
+
+.project-box.announce{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
 }
 
 
