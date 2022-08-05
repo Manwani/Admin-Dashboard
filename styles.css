@@ -190,14 +190,14 @@ ul{
     border:2px solid purple;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:20px repeat(3, 1fr);
+    grid-template-rows:min-content repeat(3, 1fr);
     gap:10px;
 }
 
 .label-text{
     grid-column: 1/3;
     font-family: "Roboto";
-    font-size:20px;
+    font-size:25px;
     font-weight:bold;
 }
 
@@ -206,11 +206,49 @@ ul{
     border:2px solid black;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 1fr 20px 1fr;
+    grid-template-rows: min-content 1fr min-content 1fr;
     gap:10px;
     padding-left:10px;
 }
 
 .project-box{
-    border: 2px solid green;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 7px solid;
+    border-left-color: rgb(230, 161, 34);
+    padding:20px;
+    position:relative;   
+    
+  
 }
+
+.box-header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    margin-bottom:2px;
+}
+
+.box-paragraph{
+    display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size:16px;
+    color:grey;
+}
+
+
+
+.three-icons{
+    width:40%;
+    position:absolute;
+    bottom:10px;
+    right:20px;
+    margin-left:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+
