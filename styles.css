@@ -241,8 +241,6 @@ ul{
     color:grey;
 }
 
-
-
 .three-icons{
     width:40%;
     position:absolute;
@@ -259,11 +257,44 @@ ul{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
     gap:10px;
+    border-left:0px;
+}
+
+
+
+.announcements{
+    border-bottom:2px solid rgb(226, 221, 221);
 }
 
 
 
 .announcements>p{
+    margin-bottom:10px;
     font-size:13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
+
+.announcements:last-child{
+    border-bottom:0px;
+}
+
+.project-box.trending{
+    border-left:0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:repeat(4, 1fr);
+    align-items: center;
+    gap:10px;
+}
+
+.profile-pic{
+    width:70px;
+    height: auto;
+    justify-self:center;
+}
+
+
 
